@@ -4,7 +4,7 @@ if ! (command -v eza > /dev/null); then
 fi
 
 function _alias_eza() {
-  alias "$1"="eza -ho$2 --smart-group --group-directories-first --git --git-ignore --icons=auto $3"
+  alias "$1"="eza -ho$2 --no-permissions --smart-group --group-directories-first --git --git-ignore --icons=auto $3"
 }
 
 _alias_eza l
